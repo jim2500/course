@@ -1,0 +1,9 @@
+一、将system服务注册到注册中心的步骤
+    1、在system中的pom文件中添加依赖
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            </dependency>
+    2、在application.properties中添加配置，指向注册中心的地址
+            eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+    3、在启动类里增加EnableEurekaClient注解
