@@ -1,5 +1,9 @@
 package com.course.system.mapper;
 
-public interface TestMapper {
+import com.course.system.domain.Test;
 
+import java.util.List;
+
+public interface TestMapper {
+    public List<Test> getUser();
 }
